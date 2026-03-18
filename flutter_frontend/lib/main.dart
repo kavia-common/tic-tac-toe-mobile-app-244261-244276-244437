@@ -11,18 +11,18 @@ class TicTacToeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Light blue color for the app background (pleasant, bright, and subtle).
-    // Chosen: #E3F2FD (Material Blue 50-like).
-    const lightBlueBackground = Color(0xFFE3F2FD);
+    // Dark blue color for the app background.
+    // Chosen: #0D1B2A (deep navy).
+    const darkBlueBackground = Color(0xFF0D1B2A);
     return MaterialApp(
       title: 'Tic Tac Toe',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.pink,
-          surface: lightBlueBackground,
-          background: lightBlueBackground,
+          surface: darkBlueBackground,
+          background: darkBlueBackground,
         ),
-        scaffoldBackgroundColor: lightBlueBackground,
+        scaffoldBackgroundColor: darkBlueBackground,
         useMaterial3: true,
       ),
       darkTheme: ThemeData.dark(),
